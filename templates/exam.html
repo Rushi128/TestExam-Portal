@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam</title>
+</head>
+<body>
+    <div style="background-color: yellow;padding-left: 50px;padding-right: 50px;padding-top: 30px;padding-bottom: 50px;">
+        <div style="margin: auto;background-color: white;">
+            <div style="width: 100%;background-color:black;color:white"><h1>Questions</h1></div>
+            <form action="/check" method="POST">
+                {% for quest in ques %}
+                {{loop.index}}
+                    <label><b>. {{quest.que}}</b></label>  <br>
+                    <input type="radio" name="{{quest.id}}" value="1"> {{quest.op1}} <br>
+                    <input type="radio" name="{{quest.id}}" value="2"> {{quest.op2}} <br>
+                    <input type="radio" name="{{quest.id}}" value="3"> {{quest.op3}} <br>
+                    <input type="radio" name="{{quest.id}}" value="4"> {{quest.op4}} <br>
+                     <br>
+                {% endfor %}
+                <input type="submit" value="Submit" style="display: block;margin: auto;padding: 10px;background-color: green;color:white;border-radius: 15px;">
+                <br>
+            </form>              
+        </div>
+    </div>
+</body>
+</html>

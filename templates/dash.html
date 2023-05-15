@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Question</title>
+</head>
+<body>
+    <div>
+        <div style="width: 200px;background-color:burlywood;padding-left:20px;padding-right:20px;margin: auto;padding-bottom: 10px;">
+            <form action="http://127.0.0.1:5000/addques" method="POST">
+                <h1 style="text-align: center;">Add Question</h1>
+                <label><b>Question</b></label> <br>
+                <input type="text" placeholder="Enter question" name="ques"> <br> <br>
+                <label><b>Option 1</b></label> <br>
+                <input type="text" placeholder="Enter Option 1" name="op1">
+                <label><b>Option 2</b></label> <br>
+                <input type="text" placeholder="Enter Option 2" name="op2">
+                <label><b>Option 3</b></label> <br>
+                <input type="text" placeholder="Enter Option 3" name="op3">
+                <label><b>Option 4</b></label> <br>
+                <input type="text" placeholder="Enter Option 4" name="op4">
+                <label><b>Correct Answer</b></label> <br>
+                <input type="text" placeholder="Enter correct answer" name="cans"><br><br>
+                <input type="submit" value="Add Question"> <br>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
